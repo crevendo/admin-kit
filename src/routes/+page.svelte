@@ -12,12 +12,16 @@
   <Row>
     <Coloumn>
       <Section title="Exclusiones por Categoria">
-        <List placeholder="Categoria" label="Agregar Categoria" />
+        <List
+          name="exclCat"
+          placeholder="Categoria"
+          label="Agregar Categoria"
+        />
       </Section>
     </Coloumn>
     <Coloumn>
       <Section title="Exclusiones por Asin">
-        <List placeholder="Asin" label="Agregar Asin" />
+        <List name="exclAsin" placeholder="Asin" label="Agregar Asin" />
       </Section>
     </Coloumn>
   </Row>
@@ -25,12 +29,18 @@
   <Row>
     <Coloumn>
       <Section title="Exclusiones por Palabra Clave">
-        <List placeholder="Palabra Clave" label="Agregar Palabra Clave" />
+        <List
+          name="exclKeyword"
+          value="test,test2"
+          placeholder="Palabra Clave"
+          label="Agregar Palabra Clave"
+        />
       </Section>
     </Coloumn>
     <Coloumn>
       <Section title="Exclusiones por Precio">
         <Input
+          name="exclPrice"
           placeholder="Precio"
           label="Excluir productos que sean mayor a"
         />
