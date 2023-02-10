@@ -7,7 +7,7 @@
 	"repository": "https://github.com/crevendo/admin-kit",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "npm version patch && npx tailwindcss -o ./src/lib/build.css --minify && svelte-kit sync && svelte-package && cd package && yalc publish --push && npm run publish",
+		"build": "npm version patch && npx tailwindcss -o ./src/lib/build.css --minify && svelte-kit sync && svelte-package && cp .npmrc package/.npmrc && cd package && yalc publish --push && npm publish",
 		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
