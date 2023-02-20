@@ -7,15 +7,14 @@
 	"repository": "https://github.com/crevendo/admin-kit",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "npm version patch && npx tailwindcss -o ./src/lib/build.css --minify && svelte-kit sync && svelte-package -o package && cp .npmrc package/.npmrc && cd package && yalc publish --push && npm publish",
-		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
+		"build": "npx tailwindcss -o ./src/lib/build.css --minify && svelte-kit sync && svelte-package && cp .npmrc dist/.npmrc",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
-		"@sveltejs/package": "^2.0.0",
+		"@sveltejs/package": "^2.0.2",
 		"autoprefixer": "^10.4.13",
 		"postcss": "^8.4.21",
 		"svelte": "^3.54.0",
@@ -30,43 +29,43 @@
 		"./package.json": "./package.json",
 		"./build.css": "./package/build.css",
 		"./components/Button.svelte": {
-			"types": "./package/components/Button.svelte.d.ts",
-			"svelte": "./package/components/Button.svelte",
-			"default": "./package/components/Button.svelte"
+			"types": "./dist/components/Button.svelte.d.ts",
+			"svelte": "./dist/components/Button.svelte",
+			"default": "./dist/components/Button.svelte"
 		},
 		"./components/Coloumn.svelte": {
-			"types": "./package/components/Coloumn.svelte.d.ts",
-			"svelte": "./package/components/Coloumn.svelte",
-			"default": "./package/components/Coloumn.svelte"
+			"types": "./dist/components/Coloumn.svelte.d.ts",
+			"svelte": "./dist/components/Coloumn.svelte",
+			"default": "./dist/components/Coloumn.svelte"
 		},
 		"./components/Input.svelte": {
-			"types": "./package/components/Input.svelte.d.ts",
-			"svelte": "./package/components/Input.svelte",
-			"default": "./package/components/Input.svelte"
+			"types": "./dist/components/Input.svelte.d.ts",
+			"svelte": "./dist/components/Input.svelte",
+			"default": "./dist/components/Input.svelte"
 		},
 		"./components/List.svelte": {
-			"types": "./package/components/List.svelte.d.ts",
-			"svelte": "./package/components/List.svelte",
-			"default": "./package/components/List.svelte"
+			"types": "./dist/components/List.svelte.d.ts",
+			"svelte": "./dist/components/List.svelte",
+			"default": "./dist/components/List.svelte"
 		},
 		"./components/Row.svelte": {
-			"types": "./package/components/Row.svelte.d.ts",
-			"svelte": "./package/components/Row.svelte",
-			"default": "./package/components/Row.svelte"
+			"types": "./dist/components/Row.svelte.d.ts",
+			"svelte": "./dist/components/Row.svelte",
+			"default": "./dist/components/Row.svelte"
 		},
 		"./components/Section.svelte": {
-			"types": "./package/components/Section.svelte.d.ts",
-			"svelte": "./package/components/Section.svelte",
-			"default": "./package/components/Section.svelte"
+			"types": "./dist/components/Section.svelte.d.ts",
+			"svelte": "./dist/components/Section.svelte",
+			"default": "./dist/components/Section.svelte"
 		},
 		".": {
-			"types": "./package/index.d.ts",
-			"svelte": "./package/index.js",
-			"default": "./package/index.js"
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js",
+			"default": "./dist/index.js"
 		}
 	},
 	"files": [
-		"package"
+		"dist"
 	],
-	"svelte": "./package/index.js"
+	"svelte": "./dist/index.js"
 }
