@@ -1,5 +1,5 @@
 <script>
-  import Button from "../lib/components/Button.svelte";
+  import Button from "../lib/components/form/Button.svelte";
   import Coloumn from "../lib/components/Coloumn.svelte";
   import Input from "../lib/components/Input.svelte";
   import List from "../lib/components/List.svelte";
@@ -12,11 +12,7 @@
   <Row>
     <Coloumn>
       <Section title="Exclusiones por Categoria">
-        <List
-          name="exclCat"
-          placeholder="Categoria"
-          label="Agregar Categoria"
-        />
+        <List name="exclCat" placeholder="Categoria" label="Agregar Categoria" />
       </Section>
     </Coloumn>
     <Coloumn>
@@ -29,21 +25,12 @@
   <Row>
     <Coloumn>
       <Section title="Exclusiones por Palabra Clave">
-        <List
-          name="exclKeyword"
-          value="test,test2"
-          placeholder="Palabra Clave"
-          label="Agregar Palabra Clave"
-        />
+        <List name="exclKeyword" value="test,test2" placeholder="Palabra Clave" label="Agregar Palabra Clave" />
       </Section>
     </Coloumn>
     <Coloumn>
       <Section title="Exclusiones por Precio">
-        <Input
-          name="exclPrice"
-          placeholder="Precio"
-          label="Excluir productos que sean mayor a"
-        />
+        <Input name="exclPrice" placeholder="Precio" label="Excluir productos que sean mayor a" />
       </Section>
     </Coloumn>
   </Row>

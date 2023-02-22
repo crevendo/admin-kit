@@ -28,35 +28,25 @@
 	"exports": {
 		"./package.json": "./package.json",
 		"./build.css": "./dist/build.css",
-		"./components/Button.svelte": {
-			"types": "./dist/components/Button.svelte.d.ts",
-			"svelte": "./dist/components/Button.svelte",
-			"default": "./dist/components/Button.svelte"
+		"./components/form": {
+			"types": "./dist/components/form/index.d.ts",
+			"svelte": "./dist/components/form/index.js",
+			"default": "./dist/components/form/index.js"
 		},
-		"./components/Coloumn.svelte": {
-			"types": "./dist/components/Coloumn.svelte.d.ts",
-			"svelte": "./dist/components/Coloumn.svelte",
-			"default": "./dist/components/Coloumn.svelte"
+		"./components/layout": {
+			"types": "./dist/components/layout/index.d.ts",
+			"svelte": "./dist/components/layout/index.js",
+			"default": "./dist/components/layout/index.js"
 		},
-		"./components/Input.svelte": {
-			"types": "./dist/components/Input.svelte.d.ts",
-			"svelte": "./dist/components/Input.svelte",
-			"default": "./dist/components/Input.svelte"
+		"./components/table": {
+			"types": "./dist/components/table/index.d.ts",
+			"svelte": "./dist/components/table/index.js",
+			"default": "./dist/components/table/index.js"
 		},
-		"./components/List.svelte": {
-			"types": "./dist/components/List.svelte.d.ts",
-			"svelte": "./dist/components/List.svelte",
-			"default": "./dist/components/List.svelte"
-		},
-		"./components/Row.svelte": {
-			"types": "./dist/components/Row.svelte.d.ts",
-			"svelte": "./dist/components/Row.svelte",
-			"default": "./dist/components/Row.svelte"
-		},
-		"./components/Section.svelte": {
-			"types": "./dist/components/Section.svelte.d.ts",
-			"svelte": "./dist/components/Section.svelte",
-			"default": "./dist/components/Section.svelte"
+		"./components/notification": {
+			"types": "./dist/components/notification/index.d.ts",
+			"svelte": "./dist/components/notification/index.js",
+			"default": "./dist/components/notification/index.js"
 		},
 		"./types": {
 			"types": "./dist/types/index.d.ts",
