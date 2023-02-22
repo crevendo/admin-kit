@@ -2,11 +2,11 @@
   import Icon from "../../icons/Icon.svelte";
 
   export let icon: any = "";
-  export let type: string = "";
+  export let style: string = "";
 </script>
 
 <div>
-  {#if type === "danger"}
+  {#if style === "danger"}
     <button
       on:click
       type="submit"
