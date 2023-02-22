@@ -32,6 +32,7 @@
 
   const updateItemsFlat = () => {
     itemsFlat = items.join(",");
+    value = itemsFlat;
   };
 </script>
 
@@ -44,9 +45,7 @@
     {#each items as item}
       <li class="py-1">
         <span>{item}</span>
-        <button class="text-indigo-500" on:click={() => remove(item)}
-          >&times;</button
-        >
+        <button class="text-indigo-500" on:click={() => remove(item)}>&times;</button>
       </li>
     {/each}
   </ul>
