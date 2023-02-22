@@ -48,6 +48,36 @@
 			"svelte": "./dist/components/notification/index.js",
 			"default": "./dist/components/notification/index.js"
 		},
+		"./components/tag": {
+			"types": "./dist/components/tag/index.d.ts",
+			"svelte": "./dist/components/tag/index.js",
+			"default": "./dist/components/tag/index.js"
+		},
+		"./components/badge": {
+			"types": "./dist/components/badge/index.d.ts",
+			"svelte": "./dist/components/badge/index.js",
+			"default": "./dist/components/badge/index.js"
+		},
+		"./components/modal": {
+			"types": "./dist/components/modal/index.d.ts",
+			"svelte": "./dist/components/modal/index.js",
+			"default": "./dist/components/modal/index.js"
+		},
+		"./components/loader": {
+			"types": "./dist/components/loader/index.d.ts",
+			"svelte": "./dist/components/loader/index.js",
+			"default": "./dist/components/loader/index.js"
+		},
+		"./components/block": {
+			"types": "./dist/components/block/index.d.ts",
+			"svelte": "./dist/components/block/index.js",
+			"default": "./dist/components/block/index.js"
+		},
+		"./components/element": {
+			"types": "./dist/components/element/index.d.ts",
+			"svelte": "./dist/components/element/index.js",
+			"default": "./dist/components/element/index.js"
+		},
 		"./types": {
 			"types": "./dist/types/index.d.ts",
 			"default": "./dist/types/index.js"

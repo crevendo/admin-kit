@@ -1,0 +1,1 @@
+export {Default as Modal} from './Modal.svelte';

@@ -1,0 +1,1 @@
+export {defualt as Badge} from './Badge.svelte';

@@ -3,3 +3,7 @@ export {default as Row} from './Row.svelte';
 export {default as Section} from './Section.svelte';
 export {default as Panel} from './Panel.svelte';
 export {default as Container} from './Container.svelte';
+export {default as Line} from './Line.svelte';
+export {default as Sidebar} from './Sidebar.svelte';
+export {default as SideMenu} from './SideMenu.svelte';
+export {default as Topbar} from './Topbar.svelte';
