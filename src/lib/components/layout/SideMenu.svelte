@@ -1,15 +1,7 @@
 <script lang="ts">
-  import { Icon, Home, Bag, Box, Users, Code, Squares, Cog } from "@crevendo/admin-kit/icons";
+  import { Icon } from "@crevendo/admin-kit/icons";
 
-  let items = [
-    { label: "Inicio", icon: Home, href: "/" },
-    { label: "Ordenes", icon: Bag, href: "/orders" },
-    { label: "Productos", icon: Box, href: "/products" },
-    { label: "Categorias", icon: Squares, href: "/categories" },
-    { label: "Usuarios", icon: Users, href: "/users" },
-    { label: "Integraciones", icon: Code, href: "/integrations" },
-    { label: "Configuracion", icon: Cog, href: "/configuration" },
-  ];
+  export let items: any;
 
   export let current: string = "/";
 </script>
