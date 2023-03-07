@@ -3,7 +3,6 @@
   import Eye from "../../icons/Eye.svelte";
   import Trash from "../../icons/Trash.svelte";
   import Button from "../form/Button.svelte";
-  import { goto } from "$app/navigation";
 
   export let disableEdit: boolean = false;
   export let disableView: boolean = false;
@@ -17,11 +16,11 @@
   };
 
   const viewAction = async () => {
-    await goto(endpoint + "/" + id);
+    window.location.assign(endpoint + "/" + id);
   };
 
   const editAction = async () => {
-    await goto(endpoint + "/edit/" + id);
+    window.location.assign(endpoint + "/edit/" + id);
   };
 </script>
 
