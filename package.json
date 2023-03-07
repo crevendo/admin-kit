@@ -1,6 +1,6 @@
 {
 	"name": "@crevendo/admin-kit",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"publishConfig": {
 		"@crevendo:registry": "https://npm.pkg.github.com"
 	},
