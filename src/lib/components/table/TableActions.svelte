@@ -3,6 +3,9 @@
   import Eye from "../../icons/Eye.svelte";
   import Trash from "../../icons/Trash.svelte";
   import Button from "../form/Button.svelte";
+  import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
 
   export let disableEdit: boolean = false;
   export let disableView: boolean = false;
@@ -12,15 +15,18 @@
   export let id: number;
 
   const deleteAction = async () => {
-    let response = await fetch(endpoint + "/" + "delete/" + id, { method: "DELETE" });
+    if (endpoint) await fetch(endpoint + "/" + "delete/" + id, { method: "DELETE" });
+    dispatch("delete", id);
   };
 
   const viewAction = async () => {
-    window.location.assign(endpoint + "/" + id);
+    if (endpoint) window.location.assign(endpoint + "/" + id);
+    dispatch("view", id);
   };
 
   const editAction = async () => {
-    window.location.assign(endpoint + "/edit/" + id);
+    if (endpoint) window.location.assign(endpoint + "/edit/" + id);
+    dispatch("edit", id);
   };
 </script>
 
